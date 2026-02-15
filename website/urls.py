@@ -6,7 +6,7 @@ from website.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_view),
-    path('about', about_view),
+    path('products/', products_view, name='products'),
     path('contact', contact_view)
 
 ]

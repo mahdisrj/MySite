@@ -5,12 +5,12 @@ from django.http import HttpResponse
 
 
 def index_view(request):
-    return HttpResponse('<h1>home page<h1>')
+    return render(request, 'website/index.html')
 
 
-def about_view(request):
-    return HttpResponse('<h1>about page<h1>')
+def products_view(request):
+    return render(request,'website/products.html')
 
 
 def contact_view(request):
-    return HttpResponse('<h1>contact page<h1>') 
+    return HttpResponse('<h1>contact page<h1>')
